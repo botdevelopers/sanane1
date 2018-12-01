@@ -4,6 +4,7 @@ const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
+var kimlik = "NTA5NjkwOTI3MzY3OTc5MDI4.Dt7vjA.atmzSFlTGJgV54Fr4LsQqlGYH4k"
 require('./util/eventLoader')(client);
 
 var prefix = ayarlar.prefix;
@@ -102,4 +103,4 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(kimlik);
