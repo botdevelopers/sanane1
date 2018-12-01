@@ -4,7 +4,7 @@ const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
-var kimlik = "NTA5NjkwOTI3MzY3OTc5MDI4.Dt7vjA.atmzSFlTGJgV54Fr4LsQqlGYH4k"
+var kimlik = "NTE4MzIxMTQxNDA0OTI2MTQ5.DuPHVA.QTuKtSz6EuU_lSP93O5_RjLi4aI"
 require('./util/eventLoader')(client);
 
 var prefix = ayarlar.prefix;
