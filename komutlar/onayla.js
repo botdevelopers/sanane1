@@ -9,7 +9,7 @@ exports.run = function(client, message, args) {
 	var channelID = "518334033990778880";
 	message.delete()
 	if (!Bot){
-		return message.reply("Doğru Kullanımı: tr!onayla <@bot>**");
+		return message.reply("Doğru Kullanımı: -onayla <@bot>**");
 	} else {
 		
 		var embed = new Discord.RichEmbed()
