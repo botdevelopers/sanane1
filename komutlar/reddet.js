@@ -9,7 +9,7 @@ exports.run = function(client, message, args) {
 	message.delete()
 	
 	if (!Bot){
-		return message.reply("Doğru Kullanımı: tr!reddet <@bot>**");
+		return message.reply("Doğru Kullanımı: -reddet <@bot>**");
 	} else {
 		
 		var embed = new Discord.RichEmbed()
