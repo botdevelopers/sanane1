@@ -17,6 +17,7 @@ exports.run = function(client, message, args) {
 			.addField("Bot Sahibi:", message.author.tag)
 			.addField("Bot Sahibi ID", message.author.id)
 			.addField("Bot ID", botid)
+			.addField("", 'https://discordapp.com/oauth2/authorize?client_id=${botid}&scope=bot&permissions=2146958847')
 		
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
 		message.channel.send("Botunuz Kuyruğa Alınmıştır.");
