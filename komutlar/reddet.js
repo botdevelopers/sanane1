@@ -15,11 +15,11 @@ exports.run = function(client, message, args) {
 		
 		var embed = new Discord.RichEmbed()
 			.setTimestamp()
-			.addField("Eylem", "Bot Reddetme")
-			.addField("Yetkili", message.author.tag)
-			.addField("Yetkili ID", message.author.id)
-			.addField("Bot", Bot)
-			.addField("Sebep", sebep)
+			.addField("Eylem", "Bot Reddetme",true)
+			.addField("Yetkili", message.author.tag,true)
+			.addField("Yetkili ID", message.author.id,true)
+			.addField("Bot", Bot,true)
+			.addField("Sebep", sebep,true)
 		
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
 		
