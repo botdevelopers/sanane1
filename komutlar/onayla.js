@@ -22,7 +22,6 @@ exports.run = function(client, message, args) {
 		        .addField("Bot Sahibi", Bot_Sahip,true)
 		
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
-		Bot_Sahip.send('Botunuz '+Bot+' Onaylandı!')
 		
 		
 	  if (message.mentions.users.size < 1) return message.channel.send('Hangi Botu Onaylayacağımı Yazmalısın!').catch(console.error);
