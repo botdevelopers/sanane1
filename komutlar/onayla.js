@@ -3,7 +3,8 @@ const Discord = require('discord.js');
 
 exports.run = function(client, message, args) {
 
-	var Bot = args.slice(0).join(' ');
+	var Bot_Sahip = args.slice(1).join(' ');
+	let Bot = message.mentions.users.first();
 	var Onay = "Bot";
 	var guildID = "518322924080463872";
 	var channelID = "518334033990778880";
@@ -14,10 +15,11 @@ exports.run = function(client, message, args) {
 		
 		var embed = new Discord.RichEmbed()
 			.setTimestamp()
-			.addField("Eylem", "Bot Onaylama")
+			.addField("Eylem", "Bot Onaylama",true)
 			.addField("Yetkili", message.author.tag)
-			.addField("Yetkili ID", message.author.id)
-			.addField("Bot", Bot)
+			.addField("Yetkili ID", message.author.id,true)
+			.addField("Bot", Bot,true)
+		        .addField("Bot Sahibi", Bot_Sahip,true)
 		
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
 		
