@@ -4,7 +4,6 @@ const Discord = require('discord.js');
 exports.run = function(client, message, args) {
 
 	var Bot_Sahip = args.slice(1).join(' ');
-	var BS = '<@'+Bot_Sahip+'>';
 	let Bot = message.mentions.users.first();
 	var Onay = "Bot";
 	var guildID = "518322924080463872";
