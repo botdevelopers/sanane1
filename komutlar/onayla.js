@@ -4,6 +4,7 @@ const Discord = require('discord.js');
 exports.run = function(client, message, args) {
 
 	var Bot_Sahip = args.slice(1).join(' ');
+	var BS = '<@'+Bot_Sahip+'>';
 	let Bot = message.mentions.users.first();
 	var Onay = "Bot";
 	var guildID = "518322924080463872";
@@ -24,7 +25,8 @@ exports.run = function(client, message, args) {
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
 		
 		
-	  if (message.mentions.users.size < 1) return message.channel.send('Hangi Botu Reddedeceğimi Yazmalısın!').catch(console.error);
+		
+	  if (message.mentions.users.size < 1) return message.channel.send('Hangi Botu Onaylayacağımı Yazmalısın!').catch(console.error);
 	  let user = message.mentions.users.first();
 	  let guild = message.guild
 	  let muteRole = client.guilds.get(message.guild.id).roles.find('name', Onay);
