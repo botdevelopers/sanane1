@@ -13,6 +13,10 @@ const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
 };
 
+setInterval(() => {
+	      client.channels.find(c => c.id === "519142131076562954").setName("Sistem Sahibi: " + 'Osman Tunahan Arıkan')
+	      client.channels.find(c => c.id === "519146836217561091").setName("Duyuru: " + 'Botunuzu Eklemek İçin -ekle <Bot_ID>')
+
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 fs.readdir('./komutlar/', (err, files) => {
