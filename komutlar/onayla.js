@@ -3,7 +3,6 @@ const Discord = require('discord.js');
 
 exports.run = function(client, message, args) {
 
-	var Bot_Sahip = args.slice(1).join(' ');
 	let Bot = message.mentions.users.first();
 	var Onay = "Bot";
 	var guildID = "518322924080463872";
@@ -19,7 +18,6 @@ exports.run = function(client, message, args) {
 			.addField("Yetkili", message.author.tag)
 			.addField("Yetkili ID", message.author.id,true)
 			.addField("Bot", Bot,true)
-		        .addField("Bot Sahibi", Bot_Sahip,true)
 		
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
 		
