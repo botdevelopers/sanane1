@@ -16,7 +16,7 @@ exports.run = function(client, message, args) {
 			.setTimestamp()
 			.addField("Eylem", "Bot Onaylama",true)
 			.addField("Yetkili", message.author.tag)
-			//.addField("Yetkili ID", message.author.id,true)
+			.addField("Yetkili ID", message.author.id,true)
 			.addField("Bot", Bot,true)
 		
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
